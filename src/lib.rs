@@ -35,7 +35,7 @@ impl StateFactory {
                 },
                 self.gas_for_program,
                 0,
-                0,
+                10_000_000_000,
             )
             .map_err(|e| FactoryError::ProgramInitializationFailedWithContext(e.to_string()))?;
 
